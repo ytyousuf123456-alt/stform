@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uttara University Student Panel</title>
+<link rel="stylesheet" href="">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Poppins",sans-serif;}
+body{background:linear-gradient(135deg,#0b1123,#132a57,#0d1b3a);color:white;min-height:100vh;}
+header{padding:25px;text-align:center;font-size:32px;font-weight:700;color:#4db8ff;text-shadow:0 0 20px #1a8cff;animation:glow 3s infinite alternate;}
+@keyframes glow{from{text-shadow:0 0 20px #004c99;}to{text-shadow:0 0 40px #66c2ff;}}
+.container{width:90%;margin:auto;margin-top:20px;background:rgba(255,255,255,0.07);border-radius:20px;padding:25px;border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(6px);box-shadow:0 0 25px rgba(0,0,0,.5);}
+.input-box{background:rgba(255,255,255,0.12);padding:20px;border-radius:15px;margin-bottom:20px;}
+input,select{width:100%;padding:12px;border:none;margin-top:10px;border-radius:10px;outline:none;font-size:16px;}
+button{margin-top:15px;width:100%;padding:12px;border:none;font-size:18px;border-radius:12px;cursor:pointer;font-weight:600;background:linear-gradient(45deg,#1a75ff,#4dd2ff);color:white;transition:.3s;}
+button:hover{transform:scale(1.03);background:linear-gradient(45deg,#4dd2ff,#1a75ff);}
+.output-card{background:rgba(0,0,0,0.3);padding:20px;border-radius:15px;margin-top:20px;border:1px solid rgba(255,255,255,0.2);animation:fadeIn .5s ease;}
+@keyframes fadeIn{from{opacity:0; transform:translateY(20px);}to{opacity:1; transform:translateY(0);}}
+.population-summary{background:rgba(0,0,0,0.25);padding:15px;border-radius:12px;margin-top:20px;}
+footer{margin-top:40px;text-align:center;font-size:13px;opacity:0.8;}
+</style>
+</head>
+<body>
+
+<header>Uttara Polytechnic Institude Student Panel</header>
+
+<div class="container">
+<h2>Register Student Details</h2>
+
+<div class="input-box">
+    <label for="name">Full Name</label>
+    <input type="text" id="nameInput" placeholder="Name">
+    <lebel for="roll">Roll</lebel>
+    <input type="text" placeholder="26XXX" name="roll" id="roll">
+    <lebel for="registration no.">Reg No.</lebel>
+    <input type="text" name="registration" id="registration" placeholder="XXXXXXXXXXXXX">
+    <label for=Department">Department</label>
+    <select name="department">
+    <option value="CSE">CSE</option>
+    <option value="CE">CE</option>
+    <option value="EE">EE</option>
+    <option value="AE">AE</option>
+    </select>
+    <div>
+    <lebel for="groupno">Group Number</lebel>
+    <select name="department">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    </div>
+</div>
